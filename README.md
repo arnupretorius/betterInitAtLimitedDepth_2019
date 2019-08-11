@@ -1,21 +1,9 @@
-# The effect of initialisation on learning dynamics, expressivity and generalisation in deep noisy rectifier networks
+# Code: At limited depth, can we initialise better? An empirical study on ReLU networks with dropout
 
-**Team**: Arnu Pretorius, Steve James, Benji Van Niekerk, Ryan Eloff, Elan Van Biljon, Matthew Reynard, Herman Kamper, Steve Kroon, Herman Engelbrecht, Benji Rosman
+This repository provides the code to reproduce the results in the paper: "At limited depth, can we initialise better? An
+empirical study on ReLU networks with dropout."
 
-### Basic idea:
-
-We investigate how learning, expressivity and generalisation of noisy rectifier neural networks are affected by their initialisation. This work aims to build on the publication below.
-
-[1] Pretorius, A., Van Biljon, E., Kroon, S., Kamper, H. Critical initialisation for deep signal propagation in noisy rectifier neural networks. In advances in neural information processing systems, 2018.
-
-
-## Project overview
-
-In [1] we derived optimal initialisation schemes for random noisy neural networks. However, the theory used in the paper is only valid at initialisation. Therefore, in this proposed work we attempt to expand the investigation to see what happens during training. Specifically, we seek to answer some of the following research questions:
-
-* What effect does initialisation have on the learning dynamics, expressivity and generalisation of fully connected feedforward rectifier neural networks that use noise regularisation (e.g. dropout)?
-* Does the optimal initialisation provide any benefit after the initial forward pass of the network, i.e. during training when the network is no longer random?
-* Given that we restrict the depth of the network to ensure that ReLU type (unbounded) activations do not over/underflow before reaching the output layer, are there initialisations off the critical point that might provide better performance? For example, lower variance inits that might induce implicit biases towards more parsimonious models.
+The code was written by Arnu Pretorius, Elan Van Biljon, Benji Van Niekerk, Ryan Eloff, Matthew Reynard.
 
 ## Steps for running experiments (GPU required):
 
